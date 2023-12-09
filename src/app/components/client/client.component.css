@@ -1,0 +1,36 @@
+.kw-single-portfolio .kw-portfolio-thumb::before {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    content: "";
+    width: 70%;
+    height: 70%;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    background-color: transparent;
+    z-index: 1;
+
+}
+
+.fixed-size-image {
+    width: 100%;
+    height: 200px;
+    filter: grayscale(100%);
+  
+  }
+
+  .kw-single-portfolio .kw-portfolio-thumb img {
+    width: 100%;
+    transition: 0.3s;
+    padding-bottom: 10px;
+}
+
+
+.h3 {
+    font-size: 28px;
+    text-align: center;
+}
+

@@ -1,0 +1,37 @@
+
+        <!-- services-area start -->
+        <section class="services-area pt-130 pb-100">
+            <div class="container">
+                <div class="row">
+                     <div class="col-xl-8 col-lg-7">
+                        <div class="services-details-main-content">
+                            <div class="services-details-thumb mb-50">
+                                <img src="assets/multi/img/services/service-details-thumb-1.jpg" alt="">
+                            </div>
+                          
+                                <h3 class="services-details-content-title">{{localDetail.info.name}}</h3>
+                               <p class="services-details-content-info">{{localDetail.info.description}}</p>
+                                <p class="services-details-content-desc mb-20">{{localDetail.info.moduless}}</p> 
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="services-widget-wrapper contact-widget-shadow-default">
+                            <div class="single-services-widget mb-45">
+                                <h3 class="service-widget-title">Rubros </h3>
+                                <div class="services-widget-content">
+                                    <div class="services-widget-link" *ngFor="let category of categories; let i = index" (click)="setPreview(i)" style="cursor: pointer;">
+                                        <ul class="services-widget-list">
+                                            <li><a >{{category.name}}</a></li>
+                                          
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+     

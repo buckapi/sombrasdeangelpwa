@@ -1,0 +1,25 @@
+.list {
+    padding-top: 35px;
+}
+
+.v {
+    width: 60%;
+}
+
+.to {
+    padding-top: 15%;
+}
+.job-box {padding-top: 35px;
+}
+.job-box::after{
+    background-color: #161c2d;
+}
+@media (max-width: 767px){
+    .job-area {    padding-top: 50%;}
+    .job-box {padding-top: 35px;
+            }
+}
+
+
+/* styles.css */
+@import '~ngx-bootstrap/bootstrap.css';

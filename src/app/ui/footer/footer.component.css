@@ -1,0 +1,7 @@
+.ul{
+    text-align: initial;
+}
+.footer__widget .fot-list li a:hover, .footer__widget .fot-list li a:focus {
+    color: #0dcaf0;
+    padding-left: 15px;
+}

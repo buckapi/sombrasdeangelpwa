@@ -1,0 +1,79 @@
+
+
+<section class="process-area process-area-06 shape-animated  pt-130 pb-100">
+    <div class="process-shape">
+        <img class="shape-one img-fluid d-none d-md-block" src="assets/multi/img/shape/20.png" alt="">
+        <img class="shape-two" src="assets/multi/img/shape/21.png" alt="">
+        <img class="shape-three" src="assets/multi/img/shape/22.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 wow fadeInLeft animated" data-wow-delay="0.1s">
+                <div class="process_img mb-30 " data-tilt data-tilt-perspective="3000">
+                    <img class="img-fluid" src="assets/multi/img/feature/09.png" alt="">
+                </div>
+            </div>
+            <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-9 col-md-10">
+                <div class="process_wrapper process_wrapper mb-30 ml-30 wow fadeInRight animated"
+                    data-wow-delay="0.2s">
+                    <div class="section-title  mb-35">
+                        <h5>Productos</h5>
+                        <h2 class="mb-35">MultiSoft® productos</h2>
+                        <p>Ofrecemos una amplia variedad de productos que proporcionan a nuestros usuarios herramientas tecnológicas poderosas, flexibles, ágiles y confiables. 
+                            Nuestro sistema de software ERP/CRM se adapta de manera personalizada a las necesidades específicas de cada negocio,
+                             convirtiéndose en el aliado ideal para impulsar la productividad de su empresa.</p>
+                    </div>
+                    <div class="process d-flex align-items-center mb-35">
+                        <div class="process__icon  mr-30">
+                            <i class="fal fa-layer-group"></i>
+                        </div>
+                        <div class="process__text">
+                            <h5 class="mb-10">Tecnologías poderosas</h5>
+                        </div>
+                    </div>
+                    <div class="process d-flex align-items-center mb-35">
+                        <div class="process__icon mr-30">
+                            <i class="fal fa-gem"></i>
+                        </div>
+                        <div class="process__text">
+                            <h5 class="mb-10">Flexibles, agíles y confiables</h5>
+                        </div>
+                    </div>
+                    <ul class="btn-list mt-45 wow fadeInRight animated" data-wow-delay=".2s">
+                        <li><a class="theme_btn h4-green-btn theme_btn_bg" [routerLink]="['/contact']">Solicita tu Producto a medida <i
+                                    class="fas fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="what-we-do-areas-04 wwd-pad pt-125 pb-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xxl-7 col-xl-7">
+                <div class="section-title green-title text-center pr-50 pl-50 mb-80 wow fadeInUp2  animated"
+                    data-wow-delay=".2s">
+                    <h5>Nuestros Productos</h5>
+                    <h2>Mucho más que software, una solución integral para su éxito . </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xxl-4 col-xl-3 col-lg-6 col-md-6" *ngFor="let product of yeoman.allProducts;let i = index"  (click)="setPreview(i)" style="cursor: pointer;">
+                <div class="no-active do_box-2 do-box-green  text-center mb-30 wow fadeInUp2  animated"
+                    data-wow-delay=".4s">
+                    <div class="do__box-inner"  >
+                        <div class="do_box__icon mb-25">
+                            <img src="assets/multi/img/favicon.png"> 
+                        </div>
+                        <h4>{{product.name}}</h4>
+                       
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+</section>
