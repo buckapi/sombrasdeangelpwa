@@ -116,37 +116,14 @@ export class HomeComponent implements AfterViewInit {
     public dataApiService: DataApiService
 
     ) {
-     
-    this.getAll();
+   
     this.loadCategories();
     this.getAllProducts();
-    this.getAlltest();
-    this.getAllRubro();
-    this.getAllIntegration();
+    
      }
      
     
-     setClient(i:any){
-      let indice= i;
-      this.dataApiService.getAllClient().subscribe(
-       response => {
-         this.clients = response;}
-       )
-     }
-     getAll(){
-   
-      this.dataApiService.getAllClient().subscribe(response=> {
-        this.yeoman.allclient=response;
-     
-      });
-    }
-    getAlltest(){
-   
-      this.dataApiService.getAllTestimony().subscribe(response=> {
-        this.yeoman.alltestimony=response;
-     
-      });
-    }
+    
     
     setCategory(i:any){
       let indice= i;
@@ -194,20 +171,7 @@ export class HomeComponent implements AfterViewInit {
       this.yeoman.preview=this.yeoman.allProducts[id];
       this.setRoute('solutions');
     }
-    getAllRubro(){
-    
-      this.dataApiService.getAllRubro().subscribe(response=>{
-        this.yeoman.allrubro=response;
-      
-        
-      });
-    }
-
-    getAllIntegration(){
-      this.dataApiService.getAllIntegration().subscribe(response=>{
-        this.yeoman.allintegration=response;
-      });
-    }
+  
 
      ngAfterViewInit(): void {
       window.scrollTo(0, 0);
