@@ -55,7 +55,7 @@ export class HomeComponent implements AfterViewInit {
     },
     breakpoints: {
            768: {
-        slidesPerView: 2
+        slidesPerView: 1
       }
     }
   };
